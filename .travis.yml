@@ -1,0 +1,13 @@
+dist: xenial
+install:
+  - sudo apt-get install python
+script:
+  - echo "shubham chaudhary"
+deploy:
+  - provider: pages
+  - skip_cleanup: true
+  - github_token: $shubh
+   - keep_history: true
+    on:
+      branch: master
+
